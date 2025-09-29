@@ -1,0 +1,27 @@
+PyQt6>=6.4.0
+aiohttp>=3.8.0
+aiofiles>=22.1.0
+cryptography>=40.0.0
+ffmpeg-python>=0.2.0
+requests>=2.28.0
+tqdm>=4.65.0
+asyncio-throttle>=1.0.2
+psutil>=5.9.0
+
+# 新增优化依赖
+uvloop>=0.17.0; platform_system != "Windows"  # Linux/Mac上的高性能事件循环
+orjson>=3.8.0  # 更快的JSON处理
+aiodns>=3.0.0  # 异步DNS解析
+cchardet>=2.1.7  # 快速字符编码检测
+lz4>=4.0.0  # 压缩算法，用于缓存
+xxhash>=3.0.0  # 快速哈希算法
+
+# 监控和分析
+prometheus-client>=0.16.0  # 性能监控指标
+py-spy>=0.3.14  # 性能分析工具
+
+# 测试依赖
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
