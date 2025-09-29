@@ -39,7 +39,7 @@
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/your-repo/m3u8-downloader.git
+git clone https://github.com/hanshaoUi/m3u8-downloader.git
 cd m3u8-downloader
 ```
 
