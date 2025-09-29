@@ -119,6 +119,18 @@ python main.py --config
 
 ## 🌐 猫抓集成
 
+### 猫抓插件设置
+1.启用数据发送：``` 手动发送或自动发送 ```
+
+2.请求方式：``` POST ```
+
+3.Content-Type：``` application/json;charset=utf-8 ```
+
+4.地址：``` http://127.0.0.1:8080/api/add-download ```
+
+5.请求体:``` {"action": "${action}", "data": ${data}, "tabId": "${tabId}","title":"${title}"} ```
+
+
 ### 使用方法
 
 1. **启动下载器**
@@ -145,6 +157,7 @@ fetch('http://127.0.0.1:8080/api/add-download', {
   })
 }).then(r => r.json()).then(d => console.log(d));
 ```
+
 
 ### API接口
 
@@ -273,7 +286,7 @@ python main.py --cli --url "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
 - [FFmpeg](https://ffmpeg.org/) - 强大的音视频处理工具
 - [PyQt6](https://www.riverbankcomputing.com/software/pyqt/) - 优秀的Python GUI框架
 - [aiohttp](https://aiohttp.readthedocs.io/) - 异步HTTP客户端/服务器框架
-
+- [猫抓](https://github.com/xifangczy/cat-catch) - 猫抓(cat-catch) 资源嗅探扩展
 ---
 
 **免责声明**: 本工具仅供学习和研究使用，请遵守相关法律法规，尊重内容版权。
